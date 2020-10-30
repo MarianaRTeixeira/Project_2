@@ -1,0 +1,188 @@
+/* Base Styles -------------------- */
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: rgb(212, 178, 178);
+  
+    margin:0 auto;
+}
+h1 {
+    font-size: 24px;
+}
+
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.group:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: solid;
+    color: grey;
+}
+
+/* lists styles*/
+li {
+    list-style: none;
+
+}
+
+li a {
+    display: block;
+}
+/*NAVIGATION */
+.name {
+    margin: 0;
+    font-size: 2em;
+}
+
+.name a,
+.main-nav a,
+.intro { 
+    display: inline-block;
+    text-align: center;
+}
+
+.main-nav li{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.main-nav {
+    margin: 35px 20px;
+}
+
+.main-nav a {
+    padding: 20px 40px;
+
+}
+
+.container{
+    max-width:80%;
+}
+
+.profile-image{
+    float: right;
+    margin-left: 10px;
+}
+
+.main-header{
+    background-color: orange;
+}
+
+.intro {
+    margin: 15px 10px;
+
+}
+
+
+/* ---- Navigation ---- */
+
+/* Pseudo-classes ------------------ */
+
+/* Main Styles --------------------- */
+
+/* Layout Styles ------------------ */
+
+.nav {
+    background-color: mistyrose;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+/* Floated Columns ------------------*/
+
+/*clearfix*/
+.group::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/***MEDIA QUERIES***/
+/* @media (min-width: 1024px) {
+
+    .intro,
+    .nav {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .name,
+    .main-nav {
+        display: inline;
+        text-align: center;
+    }
+
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .intro {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .intro-img {
+        width: 30%;
+        margin-left: 3em;
+        float: right;
+    }
+
+} */
+
+@media (min-width: 768px) {
+    
+    .container {
+        margin: 0 auto;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .main-nav {
+        display: inline;
+    }
+
+    .main-nav li {
+        float: right;
+        text-align: center;
+    }
+
+    .main-nav a {
+        background-color: transparent;
+        padding: 10px 15px;
+    }
+
+    .group:after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+    .name {
+        float: left;
+        
+        }
+}
