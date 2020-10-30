@@ -125,35 +125,13 @@ li a {
     
     .main-header{
         text-align: center;
-
-    }
-/* 
-    .name,
-    .main-nav {
-        display: inline;
-        text-align: center;
     }
 
-    .name {
-        float: left;
-    }
-
-    .main-nav {
-        float: right;
-    }
-
-    .intro {
-        display: inline-block;
-        margin-top: 15px;
-    }
-
-    .intro-img {
-        width: 30%;
-        margin-left: 3em;
-        float: right;
-    }*/
-
-} 
+    .main-nav a {
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    } 
+ }
 
 @media (min-width: 768px) {
     
@@ -170,8 +148,8 @@ li a {
     }
 
     .main-nav li {
-        float: right;
         text-align: center;
+        display: inline;
     }
 
     .main-nav a {
@@ -185,7 +163,16 @@ li a {
         clear: both;
     }
     .name {
-        float: left;
+        float: center;
         
         }
+ 
+    
+    .nav a{
+        display: inline-block;
+    }
+
+
+
 }
+ 
