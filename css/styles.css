@@ -7,7 +7,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     background-color: rgb(212, 178, 178);
-  
     margin:0 auto;
 }
 h1 {
@@ -48,6 +47,12 @@ li {
 li a {
     display: block;
 }
+
+main {
+    margin:0 auto;
+    padding-bottom: 2em;
+}
+
 /*NAVIGATION */
 .name {
     margin: 0;
@@ -82,6 +87,9 @@ li a {
     float: right;
     margin-left: 10px;
 }
+.portfolio-image {
+    max-width: 90%;
+}
 
 .main-header{
     background-color: orange;
@@ -95,13 +103,14 @@ li a {
     text-align: left;
     line-height: 1.5;
 }
-/* ---- Navigation ---- */
 
-/* Pseudo-classes ------------------ */
+.porfolio-gallery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+   
 
-/* Main Styles --------------------- */
-
-/* Layout Styles ------------------ */
+}
 
 .nav {
     background-color: mistyrose;
@@ -109,7 +118,12 @@ li a {
     padding-top: 5px;
     padding-bottom: 20px;
 }
-/* Floated Columns ------------------*/
+
+.box {
+    margin: 0 auto;
+    max-width: 30%;
+}
+
 
 /*clearfix*/
 .group::after{
@@ -119,12 +133,59 @@ li a {
 }
 
 /***MEDIA QUERIES***/
+@media (min-width: 768px) {
+
+    .container {
+        margin: 0 auto;
+        width: 100%;;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .main-nav {
+        display: inline;
+        
+    }
+
+    .main-nav li {
+        text-align: center;
+        display: inline;
+    }
+
+    .main-nav a {
+        background-color: transparent;
+        padding: 10px 15px;
+        
+    }
+
+    .group:after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+    .name {
+        float: center;
+        }
+ 
+    .nav a{
+        display: inline-block;
+    }
+
+
+}
+
  @media (min-width: 1024px) {
     
     .container{
         margin: 0 auto;
+        width: 100%;
     }
     
+    .container-portf{
+        width: 100%;
+    }
     .main-header{
         text-align: center;
     }
@@ -143,48 +204,10 @@ li a {
     .name{
         float: left;
     }
-}
 
-    @media (min-width: 768px) {
-    
-        .container {
-            margin: 0 auto;
-        }
-    
-        .main-header {
-            text-align: center;
-        }
-    
-        .main-nav {
-            display: inline;
-        }
-    
-        .main-nav li {
-            text-align: center;
-            display: inline;
-        }
-    
-        .main-nav a {
-            background-color: transparent;
-            padding: 10px 15px;
-        }
-    
-        .group:after{
-            content:"";
-            display: table;
-            clear: both;
-        }
-        .name {
-            float: center;
-            
-            }
-     
-        
-        .nav a{
-            display: inline-block;
-        }
-    
-    
-    
+    .porfolio-gallery{
+        margin-top:10px;
     }
+   
     
+}
