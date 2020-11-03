@@ -98,6 +98,7 @@ footer{
 
 .main-nav {
     margin: 35px 20px;
+    
 }
 
 .main-nav a {
@@ -105,7 +106,8 @@ footer{
 }
 
 .container{
-    max-width:80%;
+    max-width:90%;
+    margin: o auto;
 }
 
 .profile-image {
@@ -190,6 +192,9 @@ footer{
     border-top: 1px solid grey;
     padding-top: 5px;
 }
+
+
+
 /***MEDIA QUERIES***/
 @media (min-width: 768px) {
     body{ /****/
@@ -243,8 +248,19 @@ footer{
 
         text-align: center;
     }
+
+    .main-nav ul{
+        float: left; 
+    }
+
     
-}
+      
+    .main-nav li{
+       
+       margin-left:12px;
+        }
+      
+    
 
  @media (min-width: 1024px) {
     
@@ -263,15 +279,21 @@ footer{
     .main-nav a {
         padding: 10px 15px;
         margin-bottom: 20px;
-        float: right; 
+
     } 
 
+   .main-nav ul {
+    float:left;
+    }
+
+    
     .nav a{
         display: inline;
     }
 
     .name{
         float: left;
+        margin-top: 20px;
     }
 
     .porfolio-gallery{
@@ -283,4 +305,11 @@ footer{
         max-width: 30%;
     }
 
+    .main-nav{
+        
+        display: inline-block;
+    }
+
+    
+}
 }
