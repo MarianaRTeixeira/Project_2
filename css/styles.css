@@ -6,13 +6,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    background-color: rgb(212, 178, 178);
-    margin:0 auto;
+    background-color:rgb(245,245,245);
+    margin: 0 auto;
 }
 
 h1 {
-    font-size: 24px;
-    
+    font-size: 24px; 
 }
 
 h2{
@@ -22,8 +21,8 @@ h2{
 
 h3{
     text-align: center;
-    
 }
+
 img {
     max-width: 100%;
     margin-bottom: 20px;
@@ -41,15 +40,28 @@ img {
     margin-bottom: 20px;
 }
 
-a{
+a { 
     text-decoration: solid;
-    color: grey;
+    color: 	rgb(40,40,40);
 }
 
+a:hover{
+    color:tomato;
+}
+a:active {
+    color: #F0FFFF;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-header a{
+    color:	rgb(64,64,64)k;
+}
 /* lists styles*/
 li {
     list-style: none;
-
 }
 
 li a {
@@ -61,10 +73,15 @@ main {
     padding-bottom: 2em;
 }
 
-/*NAVIGATION */
+footer{
+    padding-bottom: 5px;
+}
+
+/****NAVIGATION****/
 .name {
     margin: 0;
     font-size: 2em;
+   
 }
 
 .name a,
@@ -91,29 +108,31 @@ main {
     max-width:80%;
 }
 
-.profile-image{
+.profile-image {
     float: right;
     margin-left: 10px;
 }
+
 .portfolio-image {
     max-width: 100%;
 }
 
-.main-header{
-    background-color: orange;
+.main-header,
+.nav {
+    background-color: 	rgb(245,245,245);
 }
 
 .intro {
-    margin: 15px 10px;
+    margin: 15px 0px;
 }
 
 .intro p{
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 
 .nav {
-    background-color: mistyrose;
+    background-color: rgb(236,236,236);
     margin-bottom: 15px;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -122,12 +141,10 @@ main {
 .portfolio{
     margin-top: 0.5em;
     margin-bottom: 1.75em;
-
 }
 
 .container-portf{
-    background-color: azure;
-    
+    background-color:rgb(237, 239, 240); 
 }
 
 .container-portf h2 {
@@ -159,14 +176,19 @@ main {
     background-color: whitesmoke;
     margin-bottom: 15px;
 }
+
 .contact h2 {
     padding-top: 1.2em;
-
 }
+
 .contact p {
     text-align: center;
     line-height: 1.5;
     padding-bottom: 1em;
+}
+.nav-footer {
+    border-top: 1px solid grey;
+    padding-top: 5px;
 }
 /***MEDIA QUERIES***/
 @media (min-width: 768px) {
@@ -185,7 +207,6 @@ main {
 
     .main-nav {
         display: inline;
-        
     }
 
     .main-nav li {
@@ -195,16 +216,12 @@ main {
 
     .main-nav a {
         background-color: transparent;
-        padding: 10px 15px;
-        
+        padding: 10px 15px;   
     }
 
-    /* .group:after{
-        content:"";
-        display: table;
-        clear: both;
-    } */
-   
+    .profile-image {
+        max-width: 50%;
+    }
     .nav a{
         display: inline-block;
     }
@@ -219,9 +236,14 @@ main {
     .box {
         max-width: 45%;
         margin: 0 auto;
-        
     }
 
+    .nav-footer,
+    .name{
+
+        text-align: center;
+    }
+    
 }
 
  @media (min-width: 1024px) {
@@ -230,12 +252,12 @@ main {
         margin: 0 auto;
         width: 100%;
     }
-    
+    .intro p {
+        padding-top: 2em;
+    }
     .container-portf
     .main-header{
         text-align: center;
-        
-        
     }
 
     .main-nav a {
