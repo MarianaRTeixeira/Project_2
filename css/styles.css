@@ -9,11 +9,16 @@ body {
     background-color: rgb(212, 178, 178);
     margin:0 auto;
 }
+
 h1 {
     font-size: 24px;
 }
 
 h2{
+    text-align: center;
+}
+
+h3{
     text-align: center;
 }
 img {
@@ -88,7 +93,7 @@ main {
     margin-left: 10px;
 }
 .portfolio-image {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .main-header{
@@ -104,14 +109,6 @@ main {
     line-height: 1.5;
 }
 
-.porfolio-gallery{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-   
-
-}
-
 .nav {
     background-color: mistyrose;
     margin-bottom: 15px;
@@ -119,19 +116,45 @@ main {
     padding-bottom: 20px;
 }
 
-.box {
-    margin: 0 auto;
-    max-width: 30%;
+.portfolio{
+    margin-top: 0.5em;
+    margin-bottom: 1.75em;
+
 }
 
-
-/*clearfix*/
-.group::after{
-    content:"";
-    display: table;
-    clear: both;
+.container-portf{
+    background-color: azure;
+    
 }
 
+.container-portf h2 {
+    padding-top: 1.2em;
+}
+
+.container-portf p {
+    text-align: center;
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+.experience {
+    background-color: gainsboro;
+    margin-bottom: 15px;
+}
+
+.experience h2{
+    padding-top: 1.2em;
+}
+
+.experience p {
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.contact{
+    background-color: whitesmoke;
+}
 /***MEDIA QUERIES***/
 @media (min-width: 768px) {
 
@@ -160,11 +183,11 @@ main {
         
     }
 
-    .group:after{
+    /* .group:after{
         content:"";
         display: table;
         clear: both;
-    }
+    } */
     .name {
         float: center;
         }
@@ -173,6 +196,18 @@ main {
         display: inline-block;
     }
 
+    .porfolio-gallery{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    
+    }
+
+    .box {
+        max-width: 50%;
+        margin: 0 auto;
+        
+    }
 
 }
 
@@ -183,18 +218,17 @@ main {
         width: 100%;
     }
     
-    .container-portf{
-        width: 100%;
-    }
+    .container-portf
     .main-header{
         text-align: center;
+        
+        
     }
 
     .main-nav a {
         padding: 10px 15px;
         margin-bottom: 20px;
-        float: right;
-        
+        float: right; 
     } 
 
     .nav a{
@@ -208,6 +242,12 @@ main {
     .porfolio-gallery{
         margin-top:10px;
     }
+
+    .box {
+        margin: 0 auto;
+        max-width: 30%;
+    }
+    
    
     
 }
