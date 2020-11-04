@@ -268,10 +268,7 @@ footer li:nth-child(2) {
     footer li:nth-child(1){
         display: none;
     }
-    footer li:nth-child(2),
-    footer li:nth-child(3),
-    footer li:nth-child(4),
-    footer li:nth-child(5){
+    footer li:nth-child(n+2){
         display: inline-block;
         padding-right: 5px;
     }
@@ -337,6 +334,6 @@ footer li:nth-child(2) {
     .name-footer{
         float: left;
     }
-  
+    
 }
 }
