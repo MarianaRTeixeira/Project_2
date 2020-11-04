@@ -19,9 +19,10 @@ h2{
     text-transform: uppercase;
 }
 
-h3{
+h3 h4{
     text-align: center;
 }
+
 
 img {
     max-width: 100%;
@@ -73,22 +74,17 @@ main {
     padding-bottom: 2em;
 }
 
-footer{
-    padding-bottom: 5px;
-}
-
 /****NAVIGATION****/
 .name {
     margin: 0;
     font-size: 2em;
-   
 }
 
 .name a,
 .main-nav a,
 .intro { 
     display: inline-block;
-    text-align: center;
+    padding-left: 120px;
 }
 
 .main-nav li{
@@ -98,6 +94,7 @@ footer{
 
 .main-nav {
     margin: 35px 20px;
+    text-align: center;
     
 }
 
@@ -188,12 +185,33 @@ footer{
     line-height: 1.5;
     padding-bottom: 1em;
 }
-.nav-footer {
+.main-footer{
     border-top: 1px solid grey;
-    padding-top: 5px;
+    margin-left: 10px;
+    padding-top: 20px;
+    text-align: center;
+    width: 90%;
 }
 
+.name-footer,.b-top,.b-top li{
+    display: inline; 
+    }
 
+footer li:nth-child(5),
+footer li:nth-child(4),
+footer li:nth-child(3),
+footer li:nth-child(2) {
+        display: none;
+    }
+
+.b-top a{
+        padding-top: 15px;
+}
+
+.name-footer{
+   padding-left: 2em;
+    margin:0 auto;
+}
 
 /***MEDIA QUERIES***/
 @media (min-width: 768px) {
@@ -235,7 +253,6 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    
     }
 
     .box {
@@ -243,16 +260,24 @@ footer{
         margin: 0 auto;
     }
 
-    .nav-footer,
-    .name{
-        text-align: center;
-    }
-
     
     .main-nav li{
        margin-left:12px;
     }
   
+    footer li:nth-child(1){
+        display: none;
+    }
+    footer li:nth-child(2),
+    footer li:nth-child(3),
+    footer li:nth-child(4),
+    footer li:nth-child(5){
+        display: inline-block;
+        padding-right: 5px;
+    }
+    
+
+
  @media (min-width: 1024px) {
     
     .container{
@@ -270,14 +295,12 @@ footer{
     .main-nav a {
         padding: 10px 15px;
         margin-bottom: 20px;
-
     } 
 
     .main-nav ul{
         float: left; 
         margin-right: 120px;
-        
-    }
+    } 
     ul {
         float: right;
     }
@@ -305,7 +328,15 @@ footer{
     .main-nav{
         display: inline-block;
     }
-
-    
+    .main-footer{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    .name-footer{
+        float: left;
+    }
+  
 }
 }
